@@ -1,5 +1,27 @@
-# Object file
-*.o
+def ves(n):
+    m = []
+    for i in range(n):
+        mm = []
+        for j in range(n):
+            if i == j:
+                mm.append(1)
+            elif i < j:
+                value = float(input(f"Коэффициент сравнения критерия {i + 1} с критерием {j + 1}: "))
+                mm.append(value)
+            else:
+                mm.append(1 / m[j][i])
+        m.append(mm)
+    summ = [1 for _ in range(n)]
+    for i in range(n):
+        for j in range(n):
+            summ[i] *= m[j][i]
+        summ[i] **= (1 / n)
+    konechnayasumm = sum(summ)
+    Koef = [round(val / konechnayasumm, 2) for val in summ]
+    return Koef
+n = int(input("Колличество критериев: "))
 
-# Ada Library Information
-*.ali
+koef = ves (n)
+print("Весовые коэффициенты:")
+for i, ves in enumerate(koef):
+    print(f"Критерий {i + 1}: {ves}")
