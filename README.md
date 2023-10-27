@@ -28,6 +28,7 @@
 
 3 тест с ошибкой. 
 
-![ошибка](https://github.com/Tomattttt/TomasSaaty/assets/146252320/6cdbd7d8-d6d5-4eca-80b4-8be39b173833)
+![ошибка критериев](https://github.com/Tomattttt/TomasSaaty/assets/146252320/c45e627b-dfc4-4287-b70d-238c4ce8d77d)
+
 
 
