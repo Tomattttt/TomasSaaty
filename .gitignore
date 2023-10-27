@@ -20,8 +20,10 @@ def ves(n):
     Koef = [round(val / konechnayasumm, 2) for val in summ]
     return Koef
 n = int(input("Колличество критериев: "))
-
-koef = ves (n)
-print("Весовые коэффициенты:")
-for i, ves in enumerate(koef):
-    print(f"Критерий {i + 1}: {ves}")
+if n<0:
+    print ("Введите положительное число критериев!")
+else:
+    koef = ves (n)
+    print("Весовые коэффициенты:")
+    for i, ves in enumerate(koef):
+        print(f"Критерий {i + 1}: {ves}")
